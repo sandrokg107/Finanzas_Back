@@ -66,3 +66,5 @@ alembic upgrade head
 - Build command recomendado: `pip install -r requirements.txt`
 - Start command recomendado: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
 - No usar `--reload` en producción.
+- Si ya tienes un servicio creado, actualiza el Start Command en Render Dashboard (no cambia solo con git push).
+- También puedes crear/sincronizar el servicio con `render.yaml` para versionar esta configuración.
