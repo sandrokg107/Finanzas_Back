@@ -64,3 +64,5 @@ alembic upgrade head
 - Este proyecto fija Python en `3.11.9` con el archivo `.python-version`.
 - Si Render usa `3.14+`, puede fallar la instalación de `pydantic-core`.
 - Build command recomendado: `pip install -r requirements.txt`
+- Start command recomendado: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
+- No usar `--reload` en producción.
