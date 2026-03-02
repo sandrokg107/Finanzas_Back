@@ -58,3 +58,9 @@ alembic upgrade head
 
 - No subas el archivo .env a git.
 - Si usas Docker, revisa el Dockerfile.
+
+## Deploy en Render (importante)
+
+- Este proyecto fija Python en `3.11.9` con el archivo `.python-version`.
+- Si Render usa `3.14+`, puede fallar la instalación de `pydantic-core`.
+- Build command recomendado: `pip install -r requirements.txt`
